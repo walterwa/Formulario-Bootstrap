@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Conhecendo você</a>
+        </div>
+    </nav>
+    
+    <br>
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero excepturi rem dicta repudiandae rerum deleniti natus modi, culpa pariatur reiciendis ut? Ea vitae impedit ab animi mollitia excepturi nam!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero excepturi rem dicta repudiandae rerum deleniti natus modi, culpa pariatur reiciendis ut? Ea vitae impedit ab animi mollitia excepturi nam!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero excepturi rem dicta repudiandae rerum deleniti natus modi, culpa pariatur reiciendis ut? Ea vitae impedit ab animi mollitia excepturi nam!</p>
+
+    </div>
+
+    <hr>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="nomeInput" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nomeInput" placeholder="Fulana da Silva" aria-describedby="Entrada para nome completo">
+            </div> 
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="fulana@email.com" aria-describedby="Entrada para email">
+            </div>
+            <div class="mb-3">
+                <label for="cpfInput" class="form-label">CPF</label>
+                <input oninput="mascara(this)" type="text" class="form-control" id="cpfInput" placeholder="000.111.222-33" aria-describedby="Entrada para CPF">
+            </div>
+            <label for="idadeInput" class="form-label">Idade</label>
+                <input oninput="mascara(this)" type="text" class="form-control" id="idadeInput" placeholder="29" aria-describedby="Entrada para idade em numeral">
+            <div class="mb-3">
+                <label for="numeroInput" class="form-label">Número de Telefone com DDD</label>
+                <input type="number" class="form-control" id="numeroInput" placeholder="819123456789" aria-describedby="Entrada para CPF">
+            </div>
+            <br>
+            <p>Estado de nascimento</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="naturalidadeRadio" id="naturalidadeRadio">
+                <label for="naturalidadeRadio" class="form-check-label">Pernambuco</label>
+            </div>  
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="naturalidadeRadio" id="naturalidadeRadio">
+                <label for="naturalidadeRadio" class="form-check-label">Outro estado</label>
+            </div>
+            <br>
+
+            <div class="mb-3">
+                <label for="experienciaInput" class="form-label">Descreva suas principais experiências profissionais</label>
+                <textarea type="text" class="form-control" id="experienciaInput" row="6" placeholder="Desenvolvedor Back-End (2019-2021) desenvolvedor Python na empresa Y. "></textarea>
+            </div>
+            
+            <div class="mb-3">
+                <label for="motivacaoInput" class="form-label">Quais as principais certificações profissionais?</label>
+                <textarea type="text" class="form-control" id="motivacaoInput" row="6" placeholder="Certificação Python Foundation (2023). Certificação Linux (2022)"></textarea>
+            </div>
+            
+            <div class="mb-3">
+                <label for="curriculo" class="form-label">Anexe aqui o seu currículo completo</label>
+                <input type="file" class="form-control" id="curriculo">
+            </div>
+        </form>
+    </div>
+
+
+<hr>
+
+
+<footer class="bg-dark text-center text-lg"  data-bs-theme="dark">
+    <div class="text-light text-center p-3 bs-light-text-emphasis ">
+        <p>2023</p>
+        <a class="link-light link-underline link-underline-opacity-0" href="www.google.com.br">Empresa Y</a>
+    </div>
+
+</footer>
+
+    <!-- script JS para bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./script/script.js"></script>
+</body>
+
+</html>
